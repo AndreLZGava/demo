@@ -1,0 +1,3 @@
+$('.ajax').hide('slow',function (){
+	$('.ajax').html("<%= escape_javascript(render :partial => 'books/index') %>").show('slow');
+});

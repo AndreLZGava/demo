@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Books</h1>
+
+<div class="ajax">
+  <%= render partial: 'index' %>
+</div>
+
+<%= link_to 'New Book HTML', new_book_path %>
+<%= link_to 'New Book AJAX', new_book_path, remote: true %>
